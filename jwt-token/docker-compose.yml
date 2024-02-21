@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: demirr-db
+    environment:
+      MYSQL_ROOT_PASSWORD: demirrroot
+      MYSQL_DATABASE: demirr-db
+      MYSQL_USER: demir
+      MYSQL_PASSWORD: d3m1r21
+    ports:
+      - '3306:3306'
